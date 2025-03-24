@@ -1,25 +1,25 @@
-// console.log("Soal ke-1:");
-// function changeMe(arr) {
-//     let result = {}
+console.log("Soal ke-1:");
+function changeMe(arr) {
+    let result = {}
 
-//     for (let i = 0; i < arr.length; i++) {
-//         let person = arr[i];
-//         // console.log(person)
-//         let fullName = person[0] + " " + person[1];
-//         // console.log("fullName:", fullName)
-//         let age = (person[3]) ? new Date().getFullYear() - person[3] : "Invalid Birth Year"
+    for (let i = 0; i < arr.length; i++) {
+        let person = arr[i];
+        console.log(person)
+        let fullName = person[0] + " " + person[1];
+        // console.log("fullName:", fullName)
+        let age = (person[3]) ? new Date().getFullYear() - person[3] : "Invalid Birth Year"
 
-//         result[fullName] = {
-//             firstName: person[0],
-//             lastName: person[1],
-//             gender: person[2],
-//             age: age
-//         }
-//     }
-//     return result;
-// }
+        result[fullName] = {
+            firstName: person[0],
+            lastName: person[1],
+            gender: person[2],
+            age: age
+        }
+    }
+    // return result;
+}
 
-// console.log(changeMe([['Christ', 'Evans', 'Male', 1982], ['Robert', 'Downey', 'Male']]));
+console.log(changeMe([['Christ', 'Evans', 'Male', 1982], ['Robert', 'Downey', 'Male']]));
 // Christ Evans: {
 //     firstName: 'Christ',
 //         lastName: 'Evans',
